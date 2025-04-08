@@ -53,10 +53,10 @@ async fn action(
     if Option::is_some(&game) {
         let game: &mut MinesweeperGame = game.unwrap();
         if action.starts_with('r') {
-            println!("revealing");
+            //println!("revealing");
             game.reveal(xpos, ypos);
         } else if action.starts_with('f') {
-            println!("flagging");
+            //println!("flagging");
             game.flag(xpos, ypos);
         }
         /*
